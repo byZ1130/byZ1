@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jQuery.mini.js"></script>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: #000;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        // 1.等页面dom加载完之后再执行js代码
+        // $(document).ready(function(){
+        //     $('div').hide()  //此处是dom加载完成之后的接口
+        // })
+
+        // 2.等页面dom加载完之后再执行js代码  更加简洁*******
+        $(function(){
+            $('div').hide()  //此处是dom加载完成之后的接口
+        })
+
+        // jQuery帮我们完成了封装
+
+    </script>
+    <div></div>
+</body>
+</html>
